@@ -9,11 +9,23 @@
   
   <title>Frontend Mentor | Order summary card</title>
 
+  <style>
+    #imageborder{
+      border-radius: 25px 25px 0px 0px;
+    }
+
+    .body{
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 1.5;
+    }
+
+  </style>
+
 
 </head>
-<body style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-<div class="jumbotron bg-cover" style="background-image: url(images/pattern-background-desktop.svg);
-         background-attachment: scroll;background-position: center;background-size:cover;">
+<body class="body">
 
 
   <div class="container">
@@ -22,9 +34,9 @@
     <div class="col-md-12">
 
 
-      <div class="card" style="width: 430px;">
+      <div class="card" style="width: 430px;border-radius: 5%;">
 
-        <img src="images/illustration-hero.svg" class="card-img-top" alt="...">
+        <img src="images/illustration-hero.svg" class="card-img-top" alt="..." id="imageborder">
         
         <div class="card-body text-center" style="padding: 30px 30px 30px 30px; margin: auto;">
           <h4 class="card-title" style="font-weight: 900;">Order Summary</h4>
@@ -64,9 +76,9 @@
             </div>
             <br>
 
-          <button type="button" class="btn btn-outline-dark btn-block text-white" 
+          <button type="button" class="btn btn-outline-dark btn-block text-white btn-lg shadow-lg" 
           style="background-color:hsl(245, 75%, 52%); border: 1px solid hsl(245, 75%, 52%);
-          border-radius: 8px; font-weight: 700;">
+          border-radius: 8px; font-weight: bold;">
             Proceed to Payment</button>
           <br>
 
@@ -90,10 +102,12 @@
 
 </div>
 </div>
+<footer>
 <div class="attribution card-footer text-muted">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
   Coded by <a href="#">Njong</a>.
 </div>
+</footer>
 
 </body>
 </html>
